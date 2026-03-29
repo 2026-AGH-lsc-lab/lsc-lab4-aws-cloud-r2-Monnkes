@@ -1,0 +1,23 @@
+LAMBDA ZIP
+{
+    "StatusCode": 200,
+    "ExecutedVersion": "$LATEST"
+}
+{
+    "StatusCode": 200,
+    "ExecutedVersion": "$LATEST"
+}
+{"statusCode": 200, "headers": {"Content-Type": "application/json", "X-Server-Time-Ms": "69.812", "X-Instance-Id": "2026/03/29/[$LATEST]ec9907d8dc5148468628cebdf4bdf369", "X-Cold-Start": "false"}, "body": "{\"results\": [{\"index\": 35859, \"distance\": 12.001459121704102}, {\"index\": 24682, \"distance\": 12.059946060180664}, {\"index\": 35397, \"distance\": 12.487079620361328}, {\"index\": 20160, \"distance\": 12.489519119262695}, {\"index\": 30454, \"distance\": 12.499402046203613}], \"query_time_ms\": 69.812, \"instance_id\": \"2026/03/29/[$LATEST]ec9907d8dc5148468628cebdf4bdf369\", \"cold_start\": false}"}
+
+LAMBDA CONTAINER
+{
+    "StatusCode": 200,
+    "ExecutedVersion": "$LATEST"
+}
+{"statusCode": 200, "headers": {"Content-Type": "application/json", "X-Server-Time-Ms": "84.466", "X-Instance-Id": "2026/03/29/[$LATEST]e53f9c2ff8174fa7b9c9590772afc635", "X-Cold-Start": "true"}, "body": "{\"results\": [{\"index\": 35859, \"distance\": 12.001459121704102}, {\"index\": 24682, \"distance\": 12.059946060180664}, {\"index\": 35397, \"distance\": 12.487079620361328}, {\"index\": 20160, \"distance\": 12.489519119262695}, {\"index\": 30454, \"distance\": 12.499402046203613}], \"query_time_ms\": 84.466, \"instance_id\": \"2026/03/29/[$LATEST]e53f9c2ff8174fa7b9c9590772afc635\", \"cold_start\": true}"}
+
+FARGATE
+{"instance_id":"ip-172-31-69-253.ec2.internal","query_time_ms":23.626,"results":[{"distance":12.001459121704102,"index":35859},{"distance":12.059946060180664,"index":24682},{"distance":12.487079620361328,"index":35397},{"distance":12.489519119262695,"index":20160},{"distance":12.499402046203613,"index":30454}]}
+
+EC2 APP
+{"instance_id":"f0e9493f8cad","query_time_ms":24.621,"results":[{"distance":12.001459121704102,"index":35859},{"distance":12.059946060180664,"index":24682},{"distance":12.487079620361328,"index":35397},{"distance":12.489519119262695,"index":20160},{"distance":12.499402046203613,"index":30454}]}
