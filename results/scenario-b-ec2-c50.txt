@@ -1,0 +1,50 @@
+=== ec2 | concurrency=50 | 500 requests ===
+Summary:
+  Success rate:	0.40%
+  Total:	1141.6012 ms
+  Slowest:	793.3467 ms
+  Fastest:	591.4304 ms
+  Average:	692.3886 ms
+  Requests/sec:	437.9813
+
+  Total data:	594 B
+  Size/request:	297 B
+  Size/sec:	520 B
+
+Response time histogram:
+  591.430 ms [1] |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  611.622 ms [0] |
+  631.814 ms [0] |
+  652.005 ms [0] |
+  672.197 ms [0] |
+  692.389 ms [0] |
+  712.580 ms [0] |
+  732.772 ms [0] |
+  752.963 ms [0] |
+  773.155 ms [0] |
+  793.347 ms [1] |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+
+Response time distribution:
+  10.00% in 591.4304 ms
+  25.00% in 591.4304 ms
+  50.00% in 793.3467 ms
+  75.00% in 793.3467 ms
+  90.00% in 793.3467 ms
+  95.00% in 793.3467 ms
+  99.00% in 793.3467 ms
+  99.90% in 793.3467 ms
+  99.99% in 793.3467 ms
+
+
+Details (average, fastest, slowest):
+  DNS+dialup:	24.7642 ms, 24.3816 ms, 25.1468 ms
+  DNS-lookup:	0.0120 ms, 0.0013 ms, 0.0226 ms
+
+Status code distribution:
+  [200] 2 responses
+
+Error distribution:
+  [448] Connection refused (os error 111)
+  [48] connection closed before message completed
+  [2] connection error
+

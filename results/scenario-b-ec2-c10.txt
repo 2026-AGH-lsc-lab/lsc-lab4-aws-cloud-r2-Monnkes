@@ -1,0 +1,45 @@
+=== ec2 | concurrency=10 | 500 requests ===
+Summary:
+  Success rate:	100.00%
+  Total:	10124.2990 ms
+  Slowest:	321.4053 ms
+  Fastest:	85.0026 ms
+  Average:	201.8423 ms
+  Requests/sec:	49.3861
+
+  Total data:	144.93 KiB
+  Size/request:	296 B
+  Size/sec:	14.31 KiB
+
+Response time histogram:
+   85.003 ms [1]   |
+  108.643 ms [3]   |
+  132.283 ms [13]  |■■■
+  155.923 ms [28]  |■■■■■■■
+  179.564 ms [94]  |■■■■■■■■■■■■■■■■■■■■■■■■
+  203.204 ms [116] |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  226.844 ms [125] |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  250.485 ms [82]  |■■■■■■■■■■■■■■■■■■■■
+  274.125 ms [25]  |■■■■■■
+  297.765 ms [10]  |■■
+  321.405 ms [3]   |
+
+Response time distribution:
+  10.00% in 160.4091 ms
+  25.00% in 178.0519 ms
+  50.00% in 202.7696 ms
+  75.00% in 225.9196 ms
+  90.00% in 247.6315 ms
+  95.00% in 261.3220 ms
+  99.00% in 284.2296 ms
+  99.90% in 321.4053 ms
+  99.99% in 321.4053 ms
+
+
+Details (average, fastest, slowest):
+  DNS+dialup:	0.3666 ms, 0.2289 ms, 1.0056 ms
+  DNS-lookup:	0.0079 ms, 0.0012 ms, 0.0727 ms
+
+Status code distribution:
+  [200] 500 responses
+
