@@ -1,7 +1,0 @@
-[ec2-user@ip-172-31-73-82 lsc-lab4-aws-cloud-r2-Monnkes]$ aws logs filter-log-events --log-group-name /aws/lambda/lsc-knn-zip --filter-pattern 'Init Duration' --start-time $(date -d '30 minutes ago' +%s000) --query 'events[*].message' --output text
-REPORT RequestId: 7ea10540-d10a-4daa-90bc-768c8bea80e3  Duration: 77.45 ms      Billed Duration: 706 ms Memory Size: 512 MB     Max Memory Used: 144 MB Init Duration: 627.66 ms        
-XRAY TraceId: 1-69c96761-2573188b2bd2d16a54baac60       SegmentId: e9ce7e36d99fbd45     Sampled: true   
-
-[ec2-user@ip-172-31-73-82 lsc-lab4-aws-cloud-r2-Monnkes]$ aws logs filter-log-events --log-group-name /aws/lambda/lsc-knn-container --filter-pattern 'Init Duration' --start-time $(date -d '30 minutes ago' +%s000) --query 'events[*].message' --output text
-REPORT RequestId: 13fa8c32-0b53-4bce-8393-1f7315a48708  Duration: 73.45 ms      Billed Duration: 719 ms Memory Size: 512 MB     Max Memory Used: 143 MB Init Duration: 644.97 ms        
-XRAY TraceId: 1-69c96c2f-1a65a0b0048ab5c6027ad665       SegmentId: 344102fc423c402a     Sampled: true   
